@@ -1,0 +1,569 @@
+\documentclass[nobib, a4paper, notoc, twoside, justified]{tufte-book}
+
+\usepackage{amsmath,amssymb,amsfonts,amsbsy,amsthm}
+
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{sectsty}
+\usepackage[sectionbib]{natbib}
+\usepackage[sectionbib]{chapterbib}
+\usepackage[toc, xindy]{glossaries}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{minitoc}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{framed}
+\usepackage{upgreek}
+\usepackage[absolute]{textpos}
+
+\usepackage[titles]{tocloft}
+% \setlength\cftbeforefigskip{50pt}
+\setlength\cftbeforechapskip{20pt}
+\setlength\cftbeforesecskip{10pt}
+\renewcommand{\cftchapfont}{\sffamily \color{msblue} \huge}
+\renewcommand{\cftsecfont}{\it \sffamily \Large}
+\renewcommand{\cftsubsecfont}{\sffamily \large}
+
+% \usepackage{mdframed}
+% \usepackage{titletoc}
+
+% \definecolor{secnum}{RGB}{13,151,225}
+% \definecolor{ptcbackground}{RGB}{212,237,252}
+% \definecolor{ptctitle}{RGB}{0,177,235}
+
+% \titlecontents{lsection}
+%   [5.8em]{\sffamily}
+%   {\color{secnum}\contentslabel{2.3em}\normalcolor}{}
+%   {\titlerule*[1000pc]{.}\contentspage\\\hspace*{-5.8em}\vspace*{5pt}%
+%     \color{white}\rule{\dimexpr\textwidth-15.5pt\relax}{1pt}}
+
+% \newcommand\PartialToC{%
+% \startcontents[chapters]%
+% \begin{mdframed}[backgroundcolor=ptcbackground,hidealllines=true]
+% \printcontents[chapters]{l}{1}{\colorbox{ptctitle}{%
+%   \parbox[t]{\dimexpr\textwidth-2\fboxsep\relax}{%
+%     \strut\color{white}\bfseries\sffamily\makebox[5em]{%
+%       Chapter~\thechapter\hfill}Contents}}\vskip5pt}
+% \end{mdframed}%
+% }
+
+% \renewcommand{\cftchapterfont}{\normalfont\sffamily}   
+% \renewcommand{\cftsectionfont}{\normalfont\sffamily}
+
+
+\definecolor{shadecolor}{RGB}{211, 211, 211}
+
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\pagestyle{myheadings}
+% fonts
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage[T1]{fontenc}
+\usepackage[tikz]{bclogo}
+\usepackage{fourier-orns}
+
+
+\setcaptionfont{\normalsize}
+\setmarginnotefont{\normalsize}
+\setsidenotefont{\normalsize}
+
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{1}
+\graphicspath{{figures/}}
+\definecolor{msblue}{rgb}{.204,.353,.541}
+\newcommand{\red}{\color{red}}
+\newcommand{\blue}{\color{blue}}
+
+
+\DeclareMathOperator*{\vecop}{vec}
+\def\RR{{\mathbb R}}
+\def\YY{{\mathbf Y}}
+\def\bfbeta{{\boldsymbol \beta}}
+\def\bvarepsilon{{\boldsymbol \varepsilon}}
+\def\bfvarepsilon{{\boldsymbol \varepsilon}}
+\def\bfomega{{\boldsymbol \upomega}}
+\def\bfalpha{{\boldsymbol \upalpha}}
+\def\btheta{\boldsymbol \theta}
+\newcommand{\balpha}{\boldsymbol \alpha}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\sign}{sign}
+
+\def\NN{\mathbb N}
+\def\CC{\mathbb C}
+\providecommand{\B}[1]{\mathbf{#1}}
+\def \lb {{\langle}}
+\def \rb {{\rangle}}
+\def\XX{\mathcal{X}}
+\def\EE{\mathbb{E}}
+\def\Rpsi{\mathcal{R}_n^{\psi}}
+
+\definecolor{color1}{RGB}{251,180,174}
+\definecolor{color2}{RGB}{179,205,227}
+\definecolor{color3}{RGB}{204,235,197}
+\definecolor{mslightblue}{rgb}{.31,.506,.741}
+
+
+\newtheorem{lemma}{Lemma}
+\newtheorem{result}{Result}
+\newtheorem{corollary}{Corollary}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+
+
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+\urlstyle{leo}
+
+% chapter format
+\titleformat{\chapter}%
+  {\Huge \sffamily \itshape\color{msblue}}% format applied to label+text
+  {\llap{\colorbox{msblue}{\parbox{1.5cm}{\hfill\itshape\Huge\color{white}\thechapter}}}}% label
+  {2pt}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+
+% % section format
+% \titleformat{\section}%
+%   {\normalfont\LARGE\itshape\color{msblue}}% format applied to label+text
+%   {\llap{\colorbox{orange}{\parbox{1.5cm}{\hfill\color{white}\thesection}}}}% label
+%   {1em}% horizontal separation between label and title body
+%   {}% before the title body
+%   []% after the title body
+
+% % subsection format
+% \titleformat{\subsection}%
+%   {\normalfont\large\itshape\color{blue}}% format applied to label+text
+%   {\llap{\colorbox{blue}{\parbox{1.5cm}{\hfill\color{white}\thesubsection}}}}% label
+%   {1em}% horizontal separation between label and title body
+%   {}% before the title body
+%   []% after the title body
+
+
+
+\newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage}
+
+\allsectionsfont{\rm \bf \color{msblue} \sffamily}
+
+
+\title{Feature extraction and supervised learning on fMRI: from practice to theory}
+\author{Fabian Pedregosa}
+
+
+\makeglossaries
+
+% Generates the index
+\makeindex
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% \RequirePackage[normalem]{ulem} %DIF PREAMBLE
+% \RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+% \providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+% \providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+% %DIF SAFE PREAMBLE %DIF PREAMBLE
+% \providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+% \providecommand{\DIFaddend}{} %DIF PREAMBLE
+% \providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+% \providecommand{\DIFdelend}{} %DIF PREAMBLE
+% %DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+% \providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+% \providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+% \providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+% \providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+% \providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+% \providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+% %DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+% \dominitoc
+
+\begin{titlepage}
+\begin{fullwidth}
+\begin{center}
+
+\begin{textblock}{4}(1.5,0.5)
+\begin{figure}
+\includegraphics[width=\linewidth]{figures/logo_upmc.pdf}
+\end{figure}
+\end{textblock}
+
+
+\begin{textblock}{4.8}(10,0.5)
+\begin{figure}
+\includegraphics[width=\linewidth]{figures/logotheque-inriascientifiquefr.eps}
+\end{figure}
+\end{textblock}
+
+% \begin{textblock}
+% \includegraphics[width=0.4\linewidth]{figures/logotheque-inriascientifiquefr.eps}
+% \end{textblock}
+
+
+\vspace*{30pt}
+\textsc{{\huge université pierre et marie curie} \\
+% {\vspace{10pt} \LARGE école doctorale informatique, \\télécommunications et électronique} \\
+{\vspace{10pt} \LARGE doctoral school  of computer science}  \\
+{\vspace{10pt}\LARGE prepared at parietal team - inria saclay} \\
+}
+% \textsc{\Large PhD thesis}\\[0.5cm]
+
+\vspace{10pt}
+
+% Statistical learning methods applied to fMRI: from BOLD timeseries
+% to decoding. 
+
+% Feature extraction and supervised learning on fMRI: From practice to theory
+
+\vspace{2pc}
+{ \Huge
+{\color{msblue} {Feature extraction and supervised learning on fMRI: from practice to theory}} \\[0.5cm]
+% {\color{msblue} {Estimation de variables et apprentissage supervisé en IRMf: de la pratique à la théorie}} \\[0.5cm]
+% {\it {from practice to theory}} \\[1.2cm]
+% {\it multi-voxel pattern analysis.}
+}
+
+
+% \vspace{4pc}
+% {\Large\aldineleft} \\
+% \vspace{4pc}
+
+
+\vspace{3pc}
+{\Huge \it Fabian Pedregosa-Izquierdo} \\
+
+\vspace{3pc}
+
+
+
+{\LARGE A dissertation submitted in partial fulfillement \\ \vspace{10pt} of the requirements for the degree of doctor of science, \\ \vspace{10pt} specialized in computer science.} \\
+\vspace{2pc}
+{\LARGE Defended publicly the 20th of February 2015 in front of a jury composed of}
+\vspace{2pc}
+
+
+%\begin{table}
+{\LARGE
+\begin{tabular}{lll}
+%{\bf Loss}  &{\bf Surrogate}  &{\bf Prediction} \\
+\vspace{1pc}
+{Advisors} & Francis Bach &  INRIA / ENS, Paris, France \\
+\vspace{1pc}
+& Alexandre Gramfort & Telecom Paristech, Paris, France\\
+\vspace{1pc}
+{Reviewers} & Dimitri Van de Ville  & Univ. Geneva / EPFL,  Geneva, CH \\
+\vspace{1pc}
+ &Alain Rakotomamonjy  & University of Rouen, Rouen, France \\
+\vspace{1pc}
+{Examiners} & Ludovic Denoyer & UPMC, Paris, France \\
+\vspace{1pc}
+& Bertrand Thirion & INRIA / CEA, Saclay, France \\
+\vspace{1pc}
+ & Marcel Van Gerven & Donders Instute, Nijmegen, NL \\
+\end{tabular}
+%\end{table}
+}
+
+
+\end{center}
+\end{fullwidth}
+\end{titlepage}
+
+
+\begin{titlepage}
+\begin{fullwidth}
+\begin{center}
+
+\begin{textblock}{4}(1.5,0.5)
+\begin{figure}
+\includegraphics[width=\linewidth]{figures/logo_upmc.pdf}
+\end{figure}
+\end{textblock}
+
+
+\begin{textblock}{4.8}(10,0.5)
+\begin{figure}
+\includegraphics[width=\linewidth]{figures/logotheque-inriascientifiquefr.eps}
+\end{figure}
+\end{textblock}
+
+% \begin{textblock}
+% \includegraphics[width=0.4\linewidth]{figures/logotheque-inriascientifiquefr.eps}
+% \end{textblock}
+
+
+\vspace*{30pt}
+\textsc{{\huge université pierre et marie curie} \\
+{\vspace{10pt} \LARGE école doctorale informatique, \\télécommunications et électronique} \\
+{\vspace{10pt}\LARGE équipe parietal - inria saclay}}
+
+% \textsc{\Large PhD thesis}\\[0.5cm]
+
+\vspace{10pt}
+
+% Statistical learning methods applied to fMRI: from BOLD timeseries
+% to decoding. 
+
+% Feature extraction and supervised learning on fMRI: From practice to theory
+
+\vspace{2pc}
+{ \Huge
+{\color{msblue} {Estimation de variables et apprentissage supervisé en IRMf: de la pratique à la théorie}} \\[0.5cm]
+% {\it {from practice to theory}} \\[1.2cm]
+% {\it multi-voxel pattern analysis.}
+}
+
+
+% \vspace{4pc}
+% {\Large\aldineleft} \\
+% \vspace{4pc}
+
+
+\vspace{3pc}
+{\Huge \it Fabian Pedregosa-Izquierdo} \\
+
+\vspace{3pc}
+
+
+
+{\LARGE Thèse de doctorat pour obtenir le grade de \ \\[1ex]
+{\bf DOCTEUR de l'UNIVERSIT\'E PIERRE ET MARIE CURIE} \ \\
+}
+\vspace{1pc}
+
+{\LARGE Dirig\'ee par {Francis Bach} et {Alexandre Gramfort}.}
+
+\vspace{1pc}
+
+
+{\LARGE Présentée et soutenue publiquement le 20 Février 2015 devant \\ \vspace{10pt} un jury composé de :}
+
+\vspace{1pc}
+
+
+%\begin{table}
+{\LARGE
+\begin{tabular}{lll}
+%{\bf Loss}  &{\bf Surrogate}  &{\bf Prediction} \\
+\vspace{1pc}
+{Directeurs} & Francis Bach &  INRIA / ENS, Paris, France \\
+\vspace{1pc}
+& Alexandre Gramfort & Telecom Paristech, Paris, France\\
+\vspace{1pc}
+{ Rapporteurs} & Dimitri Van de Ville  & Univ. Geneva / EPFL,  Geneva, CH \\
+\vspace{1pc}
+ &Alain Rakotomamonjy  & University of Rouen, Rouen, France \\
+\vspace{1pc}
+{ Examinateurs} & Ludovic Denoyer & UPMC, Paris, France \\
+\vspace{1pc}
+& Bertrand Thirion & INRIA / CEA, Saclay, France \\
+\vspace{1pc}
+ & Marcel Van Gerven & Donders Instute, Nijmegen, NL \\
+\end{tabular}
+%\end{table}
+}
+
+
+\end{center}
+\end{fullwidth}
+\end{titlepage}
+
+
+% >  - 1. Introduction to fMRI
+% >
+% >     Brain functional architecture
+% >     Neural coding of mental processes
+% >     Functional Neuroimaging modalities: EEG, MEG , fMRI etc. (really brief on other modalities)
+% >     fMRI signals : history, what we measure, how, MRI basics
+% >
+% >  - 2. From BOLD signal to activation maps (good transition + good)
+% >
+% >     Preprocessing of fMRI
+% >     The BOLD signal: linear time invariant assumption
+% >     Models of the HRF (Glover, FIR, etc.)
+% >     The GLM
+% >     Statistical Univariate tests (contrasts)
+% >
+% >  - 3. Beyond the canonical HRF
+% >
+% >     FIR models
+% >     Bayesian JDE approaches
+% >     R1-GLM
+% >     R1 Optimization (algorithm)
+% >       Smooth Optimization: First order, Quasi-Newton and Newton methods
+% >       Benchmarks
+% >       A tensor formulation of the GLM (maybe for appendix) XXX : keep it here
+% >
+% >  - 4. Encoding and Decoding models
+% >
+% >     Decoding and decoding
+% >       Model selection and validation
+% >       Dimension reduction
+% >       Regularization
+% >       Sparsity
+% >
+% >    Enhanced sensitivity via HRF estimation
+% >      Experimental Validation
+% >
+% >  - 5. Prediction with ordinal labels
+% >
+% >     Ordinal targets in decoding models
+% >     Ranking vs Ordinal Regression
+% >     Learning to rank from medical imaging datasets
+% >
+% >  - 6. Surrogate loss functions for ordinal labels
+% >
+% >     Design of surrogate loss functions
+% >     Consistency of Ranking (Duchi 2010)
+% >     Consistency of Ordinal Regression
+
+
+\newpage\null\thispagestyle{empty}\newpage
+\vspace*{\fill}
+
+{\section*{\Huge \it Abstract}}
+
+
+Until the advent of non-invasive neuroimaging modalities the knowledge of the human brain came from the study of its lesions, post-mortem analyses and invasive experimentations. Nowadays, modern imaging techniques such as fMRI are revealing several aspects of the human brain with progressively high spatio-temporal resolution. However, in order to answer increasingly complex neuroscientific questions the technical improvements in acquisition must be matched with novel data analysis methods. In this thesis we examine different applications of machine learning to the processing of fMRI data. We propose novel extensions and investigate the theoretical properties of different models.
+
+% The goal of an fMRI experiments is to answer a neuroscientific question. However, it is usually not possible to perform hypothesis testing directly on the data output by the fMRI scanner. Instead, fMRI data enters a processing pipeline in which it suffers several transformations before conclusions are drawn. 
+
+Often the data acquired through the fMRI scanner follows a \emph{feature extraction} step in which time-independent activation coefficients are extracted from the fMRI signal. The first contribution of this thesis is the introduction a model named Rank-1 GLM (R1-GLM) for the joint estimation of time-independent activation coefficients and the hemodynamic response function (HRF). We quantify the improvement of this approach with respect to existing procedures on different fMRI datasets.
+
+The second part of this thesis is devoted to the problem of fMRI-based \emph{decoding}, i.e., the task of predicting some information about the stimuli from brain activation maps. From a statistical standpoint, this problem is challenging
+due to the high dimensionality of the data, often thousands of
+variables, while the number of images available for training is small,
+typically a few hundreds. We examine the case in which the target variable consist of discretely ordered values. The second contribution of this thesis is to propose the following two metrics to assess the performance of a decoding model: the absolute error and pairwise disagreement. We describe several models that optimize a convex surrogate of these loss functions and examine their performance on different fMRI datasets.
+
+
+Motivated by the success of some ordinal regression models for the task of fMRI-based decoding, we turn to study some theoretical properties of these methods. The property that we investigate is known as \emph{consistency} or \emph{Fisher consistency} and relates the minimization of a loss to the minimization of its surrogate. The third, and most theoretical, contribution of this thesis is to examine the consistency properties of a rich family of surrogate loss functions that are used in the context of ordinal regression. 
+We give sufficient conditions for the consistency of the surrogate loss functions considered. This allows us to give theoretical reasons for some empirically observed differences in performance between surrogates.
+
+
+% This results allows us to identify (at least from a theoretical perspective) the most appropriate surrogate loss functions.
+
+% The study of consistency allows us to identify the surrogate loss functions that enjoy certain advantageous properties with respect to a given metric.
+
+
+\vspace{10pt}
+\paragraph{Keywords: } fMRI, BOLD, HRF, feature extraction, supervised learning, ranking, ordinal regression, decoding, encoding.
+
+\vspace*{\fill}
+\clearpage
+
+% \newpage\null\newpage
+
+
+\vspace*{\fill}
+{\section*{\Huge \it Acknowledgements}}
+
+My first words of gratitude will be for my advisors. I would like to thank Alexandre Gramfort for sharing with me during these three years his passion, his expertise and his time. You have introduced me into the world of research while at the same time living me the freedom to pursue my goals, and I will always be in debt for this. Also a great thanks to Francis Bach, who always had time for my quesions. Thanks you for your patience, for encouraging me when I drifted me into areas that were new to me and for enlightening remarks on several aspects of my work. I would also like to thank Bertrand Thirion, my ``advisor in the shadow'', for hosting me within the Parietal team and for sharing with many of the ideas that are developed within this thesis. Your honesty, patience and thoroughness are a continuous source of inspiration. I would also like to thank Bertrand and Gael Varoquaux for creating a unique work environment at the Parietal team: it has been a pleasure to be a part of this lab.
+
+This work would not have been possible without the help of my co-authors. I would first like to thank Michael Eickenberg for the work we did together and for being always enthusiastic about new ideas. I would also like to thank Philippe Ciuciu for sharing his expertise on HRF estimation with me. The rest of the Parietal team also deserves a mention for coping with me during so much time: Gael Varoquaux (for bringing me to France five years ago), Régine Bricquet (a dedicated assistant makes a big difference), Elvis ``amigo amigo computador'' Dohmatob, Danilo Bzdok, Vincent ``comme ta soeur'' Michel, Aina ``sobrasada'' Frau, Fernando Yepes, Mehdi Rahim, Alexandre Abraham, Virgile Fritsch, Jean Kossaifi, Andres Hoyos, Loic Esteve, Yannick ``horrible personne'' Schwarz, Olivier Grisel, Salma Bougacha, Philippe Gervais, Benoit ``petaflop'' Da Mota, Bernard Ng, Viviana ``reghishtrashion'' Siless, Solveig Badillo,  Nicolas Chauffert and Matthieu Kowalski. I've also had the pleasure to interact with people from the Unicog team, from which I would like to mention Valentina Borghesani, Manuela Piazza, Christophe Pallier, Elodie Cauvet, Evelyn Eger, Lucie Charles, Pedro Pinhero Chagas and Ramón Guevara. I'm also grateful to the scikit-learn crowd for teaching me so much about programming and machine learning: Andreas Mueller, Vlad Niculae, Lars Buitinck, Mathieu Blondel, Jake VanderPlas, Peter Prettenhofer and many others.
+
+I would equally like to thanks Alain Rakotomamonjy and Dimitri Van de Ville for accepting to review this manuscript and to Ludovic Denoyer, Marcel Van Gerven and Bertrand Thirion for accepting to be part of the thesis defense jury.
+
+Mis últimas palabras son para mi familia: para mi madre, mi padre y mi abuela. Nada de esto habría sido posible sin vuestro apoyo.  Un agradecimento especial para Vale, por todo y por llegar en el momento adecuado. También para los amigos de toda la vida, aquellos con los que no existe la distancia: Aitor Frías, Hugo Romero y Ángel Soler. Un grazie anche alla mia nuova famiglia italiana, per avermi fatto sentire il benvenuto nella vostra vita.
+
+\vspace*{\fill}
+
+\clearpage
+
+\newpage\null\newpage
+
+
+\vspace*{\fill}
+
+{\section*{\Huge \it Notation}}
+
+\vspace{50pt}
+
+\begin{fullwidth}
+\def\arraystretch{1.5}
+\begin{tabular}{p{3cm} p{5cm} p{5cm}}
+% \toprule
+% \multicolumn{3}{c}{Different Approaches to Ordinal Regression}\\ 
+\cmidrule{1-3}
+Notation & Name & Definition\\ 
+\midrule 
+$\Gamma(x)$ & Gamma function & $\Gamma(x) = \int_{0}^{\infty} x^{t-1} e^{-x} dx$\\
+$\mathcal{N}(\mu, \sigma^2)$ & Normal distribution with mean $\mu$ and variance $\sigma$ & \\
+$\| \B{x} \|$ \text{ or } $\| \B{x} \|_2$ & Euclidean norm for vectors & $\sqrt{\sum_i {x}_i^2}$ \\
+$\| \B{x} \|_{\mathcal{F}}$ & Frobenius norm of a matrix & $\sqrt{ \sum_{i} \sum_{j} \B{X}_{i j} ^2}$ \\
+$\B{I}_n$ & Identity matrix of size $n$ &  $I_{ij} = \delta_{ij}, ~\forall 1 \leq i, j \leq n$\\
+$\B{1}_n$ & Vector of ones of size $n$ &  $1_{i} = 1, ~\forall 1 \geq i \geq n$ \\
+$\text{tr}(\B{A})$ & Trace of a matrix & $\sum_{i} A_{ii}$ \\
+$\B{X}^{\dagger}$ & Moore-Penrose pseudoinverse & Generalized inverse matrix\\
+$\B{A}\otimes\B{B}$ & Kronecker product of matrices $\B{A}$ and $\B{B}$ & \\
+$\text{vec}(\B{A})$ & Vectorization of a matrix & Concatenation of the columns of a matrix into a single column vector\\
+$\mathbb{E}(X)$ & Expectation of the random variable X & $\int X dP$\\
+$\mathcal{R}_{\ell}(h)$ & Risk of the estimator $h$ & $\EE_{X \times Y}(\ell(Y, h(X)))$ \\
+$\mathcal{H}(x)$ & Heaviside function & $\mathcal{H}(x) = 1$ if $x \geq 0$ and $0$ otherwise\\
+$[k]$ & Integers from 1 to $k$ & $[k] = \{1,~2, \ldots,~k \}$ \\
+\bottomrule
+\end{tabular}
+\end{fullwidth}
+\vspace*{\fill}
+
+
+%\newpage
+\begin{fullwidth}
+\tableofcontents
+\end{fullwidth}
+
+% \listoffigures
+
+% \listoftables
+
+
+\include{abstract}
+
+\include{chapter_1/chapter_1}
+
+\include{chapter_2/chapter_2}
+
+\include{chapter_3/chapter_3}
+
+\include{chapter_4/chapter_4}
+
+\include{chapter_5/chapter_5}
+
+\include{chapter_6/chapter_6}
+
+\include{appendix_1}
+
+\printglossaries
+
+
+\end{document}

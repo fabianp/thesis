@@ -1,0 +1,540 @@
+\ifglsentryexists{fMRI}{}%
+{%
+\gls@defglossaryentry{fMRI}%
+{%
+name={fMRI},%
+sort={fMRI},%
+type={main},%
+first={fMRI},%
+firstplural={fMRIs},%
+text={fMRI},%
+plural={fMRIs},%
+description={Functional Magnetic Resonance Imaging},%
+descriptionplural={Functional Magnetic Resonance Imaging},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{MRI}{}%
+{%
+\gls@defglossaryentry{MRI}%
+{%
+name={MRI},%
+sort={MRI},%
+type={main},%
+first={MRI},%
+firstplural={MRIs},%
+text={MRI},%
+plural={MRIs},%
+description={Magnetic Resonance Imaging},%
+descriptionplural={Magnetic Resonance Imaging},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bold}{}%
+{%
+\gls@defglossaryentry{bold}%
+{%
+name={BOLD},%
+sort={BOLD},%
+type={main},%
+first={BOLD},%
+firstplural={BOLDs},%
+text={BOLD},%
+plural={BOLDs},%
+description={fMRI contrast that measures oxygen change in blood flow},%
+descriptionplural={fMRI contrast that measures oxygen change in blood flow},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{voxel}{}%
+{%
+\gls@defglossaryentry{voxel}%
+{%
+name={voxel},%
+sort={voxel},%
+type={main},%
+first={voxel},%
+firstplural={voxels},%
+text={voxel},%
+plural={voxels},%
+description={unity of measure in a volumetric space},%
+descriptionplural={unity of measure in a volumetric space},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{TR}{}%
+{%
+\gls@defglossaryentry{TR}%
+{%
+name={TR},%
+sort={TR},%
+type={main},%
+first={TR},%
+firstplural={TRs},%
+text={TR},%
+plural={TRs},%
+description={repetition time, sampling time in an fMRI scanner},%
+descriptionplural={repetition time, sampling time in an fMRI scanner},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{HRF}{}%
+{%
+\gls@defglossaryentry{HRF}%
+{%
+name={HRF},%
+sort={HRF},%
+type={main},%
+first={HRF},%
+firstplural={HRFs},%
+text={HRF},%
+plural={HRFs},%
+description={Hemodynamic Response Function},%
+descriptionplural={Hemodynamic Response Function},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{reference HRF}{}%
+{%
+\gls@defglossaryentry{reference HRF}%
+{%
+name={reference HRF},%
+sort={reference HRF},%
+type={main},%
+first={reference HRF},%
+firstplural={reference HRFs},%
+text={reference HRF},%
+plural={reference HRFs},%
+description={A particular HRF used in a software package.},%
+descriptionplural={A particular HRF used in a software package.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{activation coefficient}{}%
+{%
+\gls@defglossaryentry{activation coefficient}%
+{%
+name={activation coefficient},%
+sort={activation coefficient},%
+type={main},%
+first={activation coefficient},%
+firstplural={activation coefficients},%
+text={activation coefficient},%
+plural={activation coefficients},%
+description={amplitude for a single voxel associated with a stimuli in an fMRI study},%
+descriptionplural={amplitude for a single voxel associated with a stimuli in an fMRI study},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{LTI}{}%
+{%
+\gls@defglossaryentry{LTI}%
+{%
+name={LTI},%
+sort={LTI},%
+type={main},%
+first={LTI},%
+firstplural={LTIs},%
+text={LTI},%
+plural={LTIs},%
+description={Linear Time Invariant assumption},%
+descriptionplural={Linear Time Invariant assumption},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{conditions}{}%
+{%
+\gls@defglossaryentry{conditions}%
+{%
+name={conditions},%
+sort={conditions},%
+type={main},%
+first={conditions},%
+firstplural={conditionss},%
+text={conditions},%
+plural={conditionss},%
+description={different stimuli in an fMRI study},%
+descriptionplural={different stimuli in an fMRI study},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{GLM}{}%
+{%
+\gls@defglossaryentry{GLM}%
+{%
+name={GLM},%
+sort={GLM},%
+type={main},%
+first={GLM},%
+firstplural={GLMs},%
+text={GLM},%
+plural={GLMs},%
+description={General Linear Model},%
+descriptionplural={General Linear Model},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{AR(1)}{}%
+{%
+\gls@defglossaryentry{AR(1)}%
+{%
+name={AR(1)},%
+sort={AR(1)},%
+type={main},%
+first={AR(1)},%
+firstplural={AR(1)s},%
+text={AR(1)},%
+plural={AR(1)s},%
+description={autorregressive with variance 1},%
+descriptionplural={autorregressive with variance 1},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{decoding}{}%
+{%
+\gls@defglossaryentry{decoding}%
+{%
+name={decoding},%
+sort={decoding},%
+type={main},%
+first={decoding},%
+firstplural={decodings},%
+text={decoding},%
+plural={decodings},%
+description={distinguish patterns of neural activity associated with different stimuli or cognitive states},%
+descriptionplural={distinguish patterns of neural activity associated with different stimuli or cognitive states},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{encoding}{}%
+{%
+\gls@defglossaryentry{encoding}%
+{%
+name={encoding},%
+sort={encoding},%
+type={main},%
+first={encoding},%
+firstplural={encodings},%
+text={encoding},%
+plural={encodings},%
+description={predicting patterns of brain response to novel stimuli based on their features},%
+descriptionplural={predicting patterns of brain response to novel stimuli based on their features},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Heaviside}{}%
+{%
+\gls@defglossaryentry{Heaviside}%
+{%
+name={Heaviside},%
+sort={Heaviside},%
+type={main},%
+first={Heaviside},%
+firstplural={Heavisides},%
+text={Heaviside},%
+plural={Heavisides},%
+description={The real function that is zero for negative values and one otherwise},%
+descriptionplural={The real function that is zero for negative values and one otherwise},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{hinge loss}{}%
+{%
+\gls@defglossaryentry{hinge loss}%
+{%
+name={hinge loss},%
+sort={hinge loss},%
+type={main},%
+first={hinge loss},%
+firstplural={hinge losss},%
+text={hinge loss},%
+plural={hinge losss},%
+description={Loss function used by Support Vector Machines},%
+descriptionplural={Loss function used by Support Vector Machines},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Kendall}{}%
+{%
+\gls@defglossaryentry{Kendall}%
+{%
+name={Kendall $\tau $},%
+sort={Kendall $\tau $},%
+type={main},%
+first={Kendall $\tau $},%
+firstplural={Kendall $\tau $s},%
+text={Kendall $\tau $},%
+plural={Kendall $\tau $s},%
+description={Distance measure between two measurements. It is a measure of rank correlation, i.e., the similarity of the orderings of the data when ranked by each of the quantities},%
+descriptionplural={Distance measure between two measurements. It is a measure of rank correlation, i.e., the similarity of the orderings of the data when ranked by each of the quantities},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{omnibus}{}%
+{%
+\gls@defglossaryentry{omnibus}%
+{%
+name={omnibus test},%
+sort={omnibus test},%
+type={main},%
+first={omnibus test},%
+firstplural={omnibus tests},%
+text={omnibus test},%
+plural={omnibus tests},%
+description={Statistical test to asses whether the explained variance in a set of data is significantly greater than the unexplained variance.},%
+descriptionplural={Statistical test to asses whether the explained variance in a set of data is significantly greater than the unexplained variance.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

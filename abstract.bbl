@@ -1,0 +1,146 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bekhti et~al.(2014)Bekhti, Zilber, Pedregosa, Ciuciu, Van~Wassenhove,
+  and Gramfort]{bekhti:hal-01032909}
+Yousra Bekhti, Nicolas Zilber, Fabian Pedregosa, Philippe Ciuciu, Virginie
+  Van~Wassenhove, and Alexandre Gramfort.
+\newblock {Decoding perceptual thresholds from MEG/EEG}.
+\newblock In \emph{{Pattern Recoginition in Neuroimaging (PRNI) (2014)}}, page
+  p00, Tubingen, Germany, June 2014.
+
+\bibitem[Borghesani et~al.(2014)Borghesani, Pedregosa, Eger, Buiatti, and
+  Piazza]{Borghesani2014}
+Valentina Borghesani, Fabian Pedregosa, Evelyn Eger, Marco Buiatti, and Manuela
+  Piazza.
+\newblock {A perceptual-to-conceptual gradient of word coding along the ventral
+  path}.
+\newblock In \emph{4th International Workshop on Pattern Recognition in
+  Neuroimaging}, pages 3--6, 2014.
+
+\bibitem[Chu and Keerthi(2005)]{Keerthi2003}
+Wei Chu and S~Sathiya Keerthi.
+\newblock {New Approaches to Support Vector Ordinal Regression}.
+\newblock In \emph{Proceedings of the 22th International Conference on Machine
+  Learning (ICML)}, 2005.
+
+\bibitem[Chu and Keerthi(2007)]{Chu2007}
+Wei Chu and S~Sathiya Keerthi.
+\newblock {Support Vector Ordinal Regression}.
+\newblock \emph{Neural computation}, 815\penalty0 (2001):\penalty0 792--815,
+  2007.
+
+\bibitem[Friston et~al.(1995)Friston, Holmes, and Poline]{Friston1995}
+Karl~J. Friston, A.~P Holmes, and J.~P. Poline.
+\newblock {Statistical Parametric Maps in Functional Imaging : A General Linear
+  Approach}.
+\newblock \emph{Human Brain Mapping}, 2\penalty0 (4), 1995.
+
+\bibitem[Herbrich et~al.(1999)Herbrich, Graepel, and Obermayer]{Herbrich2000}
+Ralf Herbrich, Thore Graepel, and Klaus Obermayer.
+\newblock \emph{Large margin rank boundaries for ordinal regression}, pages
+  115--132.
+\newblock MIT; 1998, 1999.
+
+\bibitem[Jimura and Poldrack(2011)]{Jimura_Poldrack_2011}
+Koji Jimura and Russell~A Poldrack.
+\newblock Analyses of regional-average activation and multivoxel pattern
+  information tell complementary stories.
+\newblock \emph{Neuropsychologia}, pages 1--9, 2011.
+
+\bibitem[Joachims(2002)]{Joachims2002}
+Thorsten Joachims.
+\newblock {Optimizing Search Engines using Clickthrough Data}.
+\newblock In \emph{Proceedings of the eighth ACM SIGKDD international
+  conference on Knowledge discovery and data mining}. ACM, 2002.
+
+\bibitem[Kay et~al.(2008)Kay, Naselaris, Prenger, and Gallant]{Kay2008}
+Kendrick~N. Kay, Thomas Naselaris, Ryan~J. Prenger, and Jack~L. Gallant.
+\newblock {Identifying natural images from human brain activity.}
+\newblock \emph{Nature}, 452\penalty0 (7185):\penalty0 352--5, March 2008.
+\newblock ISSN 1476-4687.
+
+\bibitem[Lee et~al.(2004)Lee, Lin, and Wahba]{lee2004multicategory}
+Yoonkyung Lee, Yi~Lin, and Grace Wahba.
+\newblock Multicategory support vector machines: Theory and application to the
+  classification of microarray data and satellite radiance data.
+\newblock \emph{Journal of the American Statistical Association}, 99\penalty0
+  (465):\penalty0 67--81, 2004.
+
+\bibitem[Li and Lin(2007)]{Li2007}
+Ling Li and Hsuan-tien Lin.
+\newblock {Ordinal Regression by Extended Binary Classification}.
+\newblock In \emph{Advances in Neural Information Processing Systems (NIPS)}.
+  MIT Press, 2007.
+
+\bibitem[Lin and Li(2006)]{lin2006large}
+Hsuan-Tien Lin and Ling Li.
+\newblock Large-margin thresholded ensembles for ordinal regression: Theory and
+  practice.
+\newblock In \emph{Algorithmic Learning Theory}, pages 319--333. Springer,
+  2006.
+
+\bibitem[Liu(2009)]{liu2009learning}
+Tie-Yan Liu.
+\newblock Learning to rank for information retrieval.
+\newblock \emph{Foundations and Trends in Information Retrieval}, 3\penalty0
+  (3):\penalty0 225--331, 2009.
+
+\bibitem[McCullagh(1980)]{McCullagh1980}
+Peter McCullagh.
+\newblock {Regression Models for Ordinal Data}.
+\newblock \emph{Journal of the Royal Statistical Society}, 42\penalty0
+  (2):\penalty0 109--142, 1980.
+
+\bibitem[Naselaris et~al.(2009)Naselaris, Prenger, Kay, Oliver, and
+  Gallant]{naselaris2009bayesian}
+Thomas Naselaris, Ryan~J Prenger, Kendrick~N Kay, Michael Oliver, and Jack~L
+  Gallant.
+\newblock Bayesian reconstruction of natural images from human brain activity.
+\newblock \emph{Neuron}, 63\penalty0 (6):\penalty0 902--915, 2009.
+
+\bibitem[Pedregosa et~al.(2012)Pedregosa, Cauvet, Varoquaux, Pallier, Thirion,
+  and Gramfort]{pedregosa2012learning}
+Fabian Pedregosa, Elodie Cauvet, Ga{\"e}l Varoquaux, Christophe Pallier,
+  Bertrand Thirion, and Alexandre Gramfort.
+\newblock Learning to rank from medical imaging data.
+\newblock In \emph{Machine Learning in Medical Imaging}, pages 234--241.
+  Springer Berlin Heidelberg, 2012.
+
+\bibitem[Pedregosa et~al.(2014)Pedregosa, Eickenberg, Ciuciu, Thirion, and
+  Gramfort]{pedregosa:hal-00952554}
+Fabian Pedregosa, Michael Eickenberg, Philippe Ciuciu, Bertrand Thirion, and
+  Alexandre Gramfort.
+\newblock {Data-driven HRF estimation for encoding and decoding models}.
+\newblock \emph{{NeuroImage}}, pages 209--220, November 2014.
+
+\bibitem[Ramaswamy and Agarwal(2012)]{Ramaswamy2012}
+Harish~G Ramaswamy and Shivani Agarwal.
+\newblock {Classification Calibration Dimension for General Multiclass Losses}.
+\newblock In \emph{Advances in Neural Information Processing Systems}, pages
+  1--15, 2012.
+
+\bibitem[Rennie and Srebro(2005)]{Rennie}
+Jason D.~M. Rennie and Nathan Srebro.
+\newblock {Loss Functions for Preference Levels : Regression with Discrete
+  Ordered Labels}.
+\newblock In \emph{Proceedings of the IJCAI Multidisciplinary Workshop on
+  Advances in Preference Handling}, 2005.
+
+\bibitem[Shashua and Levin(2003)]{Shashua}
+Amnon Shashua and Anat Levin.
+\newblock Ranking with large margin principle : Two approaches.
+\newblock In \emph{Advances in Neural Information Processing Systems (NIPS)}.
+  MIT Press, 2003.
+
+\bibitem[Zhang(2004)]{Zhang}
+Tong Zhang.
+\newblock {Statistical Behavior and Consistency of Classification Methods based
+  on Convex Risk Minimization}.
+\newblock \emph{The Annals of Statistics}, 32:\penalty0 56--85, 2004.
+
+\end{thebibliography}
